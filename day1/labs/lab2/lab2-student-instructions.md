@@ -21,7 +21,7 @@ Learn how Terraform detects and manages infrastructure drift when resources are 
 ---
 
 ## Prerequisites
-- Access to Lab environment (us-west-1 region)
+- Access to Lab environment (ap-south-1 region)
 
 ---
 
@@ -124,7 +124,7 @@ terraform {
 # Provider Configuration
 # Specifies which cloud provider to use and in which region
 provider "aws" {
-  region = "us-west-1"
+  region = "ap-south-1"
 
   # IMPORTANT: Change 'userX' to your assigned student ID (user1, user2, etc.)
   default_tags {
@@ -138,7 +138,7 @@ provider "aws" {
 # Creates a single EC2 instance in AWS with organizational tags
 resource "aws_instance" "drift_demo" {
 
-  # AMI (Amazon Machine Image) - Amazon Linux 2023 for us-west-1
+  # AMI (Amazon Machine Image) - Amazon Linux 2023 for ap-south-1
   ami = "ami-067ec7f9e54a67559"
 
   # Instance type - t3.micro is free tier eligible
@@ -211,13 +211,13 @@ This command queries your local Terraform state file for the instance ID.
 
 **Modify tags using AWS CLI:**
 ```bash
-aws ec2 create-tags --region us-west-1 --resources $INSTANCE_ID \
+aws ec2 create-tags --region ap-south-1 --resources $INSTANCE_ID \
   --tags Key=Name,Value=ModifiedDriftDemoUserX
 ```
 
 **Verify the changes in AWS:**
 ```bash
-aws ec2 describe-tags --region us-west-1 \
+aws ec2 describe-tags --region ap-south-1 \
   --filters "Name=resource-id,Values=$INSTANCE_ID" \
   --output table
 ```
@@ -285,7 +285,7 @@ Type `yes` when prompted.
 
 **Verify tags are restored:**
 ```bash
-aws ec2 describe-tags --region us-west-1 \
+aws ec2 describe-tags --region ap-south-1 \
   --filters "Name=resource-id,Values=$INSTANCE_ID" \
   --output table
 ```
@@ -304,7 +304,7 @@ Now let's explore the **other** way to handle drift: accepting it.
 
 **Create drift again:**
 ```bash
-aws ec2 create-tags --region us-west-1 --resources $INSTANCE_ID \
+aws ec2 create-tags --region ap-south-1 --resources $INSTANCE_ID \
   --tags Key=Team,Value=DevOps
 ```
 
@@ -327,7 +327,7 @@ It wants to remove the `Team` tag.
 # Provider Configuration
 # Specifies which cloud provider to use and in which region
 provider "aws" {
-  region = "us-west-1"
+  region = "ap-south-1"
 
   # IMPORTANT: Change 'userX' to your assigned student ID (user1, user2, etc.)
   default_tags {
@@ -341,7 +341,7 @@ provider "aws" {
 # Creates a single EC2 instance in AWS with organizational tags
 resource "aws_instance" "drift_demo" {
 
-  # AMI (Amazon Machine Image) - Amazon Linux 2023 for us-west-1
+  # AMI (Amazon Machine Image) - Amazon Linux 2023 for ap-south-1
   ami = "ami-067ec7f9e54a67559"
 
   # Instance type - t3.micro is free tier eligible

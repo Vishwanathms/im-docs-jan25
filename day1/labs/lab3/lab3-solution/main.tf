@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "us-west-1"
+  region = "ap-south-1"
 
   # IMPORTANT: Change 'userX' to your assigned student ID (user1, user2, etc.)
   default_tags {

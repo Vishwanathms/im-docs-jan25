@@ -21,7 +21,7 @@ Deploy your first AWS EC2 instance using Terraform.
 
 ## Prerequisites
 - Access to Lab environment (ask your trainer if you don't have one)
-- The lab region is us-west-1
+- The lab region is ap-south-1
 
 ---
 
@@ -34,12 +34,12 @@ Deploy your first AWS EC2 instance using Terraform.
     - `main.tf` (with AWS provider including default_tags)
 
    - Your provider should:
-    - Configure us-west-1 region
+    - Configure ap-south-1 region
     - Include default_tags with owner = your user ID (e.g., user1, user2)
 
    - Your instance should be:
     - t3.micro instance
-    - launched in us-west-1
+    - launched in ap-south-1
     - use ami with id: ami-067ec7f9e54a67559
 
 ---
@@ -110,7 +110,7 @@ terraform {
 
 ```hcl
 provider "aws" {
-  region = "us-west-1"
+  region = "ap-south-1"
 
   # IMPORTANT: Change 'userX' to your assigned student ID (user1, user2, etc.)
   default_tags {
@@ -131,7 +131,7 @@ resource "aws_instance" "my_first_instance" {
 ```
 
 **What this code does:**
-- `provider "aws"` - Connects to AWS in us-west-1 region
+- `provider "aws"` - Connects to AWS in ap-south-1 region
 - `default_tags` - Automatically applies tags to all AWS resources created by this provider
 - `owner = "userX"` - **IMPORTANT: Replace "userX" with your assigned student ID (e.g., user1, user2, user3)**
 - `resource "aws_instance"` - Creates an EC2 instance

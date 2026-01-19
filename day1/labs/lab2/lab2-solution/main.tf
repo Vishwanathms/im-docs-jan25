@@ -1,7 +1,7 @@
 # Provider Configuration
 # Specifies which cloud provider to use and in which region
 provider "aws" {
-  region = "us-west-1"
+  region = "ap-south-1"
 
   # IMPORTANT: Change 'userX' to your assigned student ID (user1, user2, etc.)
   default_tags {
@@ -15,7 +15,7 @@ provider "aws" {
 # Creates a single EC2 instance in AWS with organizational tags
 resource "aws_instance" "drift_demo" {
 
-  # AMI (Amazon Machine Image) - Amazon Linux 2023 for us-west-1
+  # AMI (Amazon Machine Image) - Amazon Linux 2023 for ap-south-1
   ami = "ami-067ec7f9e54a67559"
 
   instance_type = "t3.micro"

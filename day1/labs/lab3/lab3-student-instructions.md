@@ -24,7 +24,7 @@ Learn how Terraform manages multiple dependent resources and handles incremental
 - Completed Labs 1 and 2
 - Understanding of Terraform basic workflow
 - AWS CLI configured
-- Lab region: us-west-1
+- Lab region: ap-south-1
 
 ---
 
@@ -134,7 +134,7 @@ terraform {
 
 ```hcl
 provider "aws" {
-  region = "us-west-1"
+  region = "ap-south-1"
 
   # IMPORTANT: Change 'userX' to your assigned student ID (user1, user2, etc.)
   default_tags {
