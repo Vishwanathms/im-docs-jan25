@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.3.0">
+  <diagram name="Page-1" id="EIz9Cm0k9_z0r1yzoJuF">
+    <mxGraphModel dx="1017" dy="585" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="78NsAgtdzNqgo9nv6Cbk-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="400" width="260" x="550" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="78NsAgtdzNqgo9nv6Cbk-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="EC2-Instance module" vertex="1">
+          <mxGeometry height="60" width="120" x="580" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="78NsAgtdzNqgo9nv6Cbk-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="security group Module" vertex="1">
+          <mxGeometry height="60" width="120" x="580" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="78NsAgtdzNqgo9nv6Cbk-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="S3-data-module" vertex="1">
+          <mxGeometry height="60" width="120" x="580" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="78NsAgtdzNqgo9nv6Cbk-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="LB-module" vertex="1">
+          <mxGeometry height="60" width="120" x="580" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="78NsAgtdzNqgo9nv6Cbk-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Github repo - 1" vertex="1">
+          <mxGeometry height="30" width="100" x="640" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="78NsAgtdzNqgo9nv6Cbk-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="160" width="230" x="60" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="78NsAgtdzNqgo9nv6Cbk-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Scenario1" vertex="1">
+          <mxGeometry height="30" width="60" x="130" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="78NsAgtdzNqgo9nv6Cbk-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="EC2 instance -- 1" vertex="1">
+          <mxGeometry height="30" width="160" x="70" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="78NsAgtdzNqgo9nv6Cbk-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="SG -- 1" vertex="1">
+          <mxGeometry height="30" width="160" x="70" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="78NsAgtdzNqgo9nv6Cbk-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Github repo - 2" vertex="1">
+          <mxGeometry height="30" width="100" x="110" y="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
